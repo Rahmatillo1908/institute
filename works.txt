@@ -1,0 +1,2 @@
+2. Sahifalarni ichini dizayn qilish
+4. Saytni responsive qilish
