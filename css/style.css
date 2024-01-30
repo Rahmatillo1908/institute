@@ -42,17 +42,17 @@ i {
 .top .top-right {
   width: 50%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   color: #1E2761;
   font-size: 20px;
 }
 
-.divider {
+/* .divider {
   width: 1px;
   height: 40px;
   background: #1E2761;
-}
+} */
 
 .lang-menu {
   width: 100px;
@@ -76,7 +76,7 @@ i {
   cursor: pointer;
 }
 
-.lang-menu .selected-lang:before {
+.lang-menu .selected-lang::after {
   content: '';
   display: inline-block;
   width: 25px;
@@ -433,20 +433,23 @@ a.button:hover {
   margin: 150px auto;
   color: white;
 }
+
 .maqolalarWrapper .maqaolalarCards {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
 }
+
 .maqaolalarCards .maqaolalarCard {
   width: 45%;
   background: center/cover url("../images/blog.png");
-  height: 300px;
+  height: 400px;
   margin: 20px;
   display: flex;
   align-items: end;
 }
+
 .maqaolalarCard .maqalaText {
   height: 150px;
   padding: 0px 20px;
@@ -455,6 +458,75 @@ a.button:hover {
   background: rgba(0, 0, 0, 0.3);
 }
 
+/* contact */
+.contact {
+  background: #1E2761;
+  color: white;
+}
+
+.contact .contactWrapper {
+  display: flex;
+  padding: 30px 50px;
+  justify-content: space-between;
+}
+
+.contactLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.contactLeft .contactNumber {
+  display: flex;
+  gap: 40px;
+  font-size: 25px;
+  align-items: center;
+}
+
+.contactNumber a.button {
+  margin-left: 0px;
+  margin-top: 0px;
+}
+
+.contactLeft .contactIcons {
+  padding-top: 50px;
+  display: flex;
+  gap: 20px;
+  font-size: 25px;
+  align-items: center;
+}
+
+.contact .contactRight {
+  display: flex;
+  width: 350px;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.3);
+  align-items: center;
+  padding: 50px 0px;
+  border-radius: 10px;
+}
+
+.contactRight input {
+  background: #1E2761;
+  border-radius: 10px;
+  color: white;
+  outline: none;
+  border: none;
+  padding: 15px 10px;
+  width: 80%;
+  font-size: 14px;
+  margin: 30px 0px;
+  box-shadow: 0px 0px 20px 3px rgba(128, 128, 128, 0.5);
+}
+
+.contactRight button {
+  border-radius: 10px;
+  padding: 10px 30px;
+  font-size: 17px;
+  color: #1E2761;
+  outline: none;
+  border: none;
+}
 
 @media screen and (max-width: 800px) {
   .nav {
@@ -462,11 +534,15 @@ a.button:hover {
     justify-content: left;
   }
 
-  .top {
-    height: 14vh;
+  .nav .links {
+    display: none;
   }
 
-  .nav .links {
+  .lang-menu {
+    width: 30px;
+  }
+
+  .selected-lang p {
     display: none;
   }
 
@@ -484,7 +560,8 @@ a.button:hover {
     justify-content: center;
     align-items: center;
     color: #1E2761;
-    font-size: 12px;
+    font-size: 10px;
+    gap: 5px;
   }
 
   .top .top-right {
@@ -532,18 +609,22 @@ a.button:hover {
   .newsCards .newsCard {
     width: 90%;
   }
+
   .section2 .section2Wrapper {
     width: 90%;
-    padding: 100px 0px 0px 50px ;
+    padding: 100px 0px 0px 50px;
   }
+
   .section2 .section2Left {
     position: relative;
     z-index: 2;
     width: 100%;
   }
-  .section2 .section2Left h3{
+
+  .section2 .section2Left h3 {
     font-size: 25px;
   }
+
   .section2 .section2Right {
     position: absolute;
     z-index: 1;
@@ -551,7 +632,22 @@ a.button:hover {
     left: 50px;
     filter: blur(5px);
   }
+
   .maqaolalarCards .maqaolalarCard {
-    width:100%;
+    width: 100%;
+  }
+
+  .contact .contactWrapper {
+    display: block;
+  }
+
+  .contactWrapper .contactLeft,
+  .contactWrapper .contactRight {
+    width: 90%;
+    margin: 30px auto;
+  }
+
+  .contactLeft .contactNumber {
+    flex-wrap: wrap;
   }
 }
