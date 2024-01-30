@@ -38,6 +38,7 @@ i {
   align-items: center;
   color: #1E2761;
 }
+
 .top .top-right {
   width: 50%;
   display: flex;
@@ -162,7 +163,7 @@ i {
   color: #fff;
   font-size: 18px;
   background: rgba(30, 39, 97, 0.44);
-  border-radius: 16px;
+  border-radius: 10px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(12.2px);
   -webkit-backdrop-filter: blur(12.2px);
@@ -354,14 +355,14 @@ a.button:hover {
 .news .newsCards {
   display: flex;
   padding: 50px 0px;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
 .newsCard {
-  margin: 30px;
+  margin: 35px;
   width: 300px;
-  box-shadow: 0px 0px 15px 3px rgba(128, 128, 128, 0.5);
+  box-shadow: 0px 0px 20px 3px rgba(128, 128, 128, 0.5);
 }
 
 .newsCard img {
@@ -380,10 +381,82 @@ a.button:hover {
   padding: 5px;
 }
 
+/* section2  */
+
+.section2 {
+  border-radius: 20px;
+  background: #1E2761;
+  width: 85%;
+  margin: 50px auto;
+  position: relative;
+}
+
+.section2 .section2Wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0px auto;
+  padding: 50px 50px 0px;
+}
+
+.section2 .section2Left {
+  color: white;
+  padding: 10px;
+}
+
+.section2 .section2Left h3 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.section2 .section2Left p {
+  color: #3DF285;
+}
+
+.section2 .section2Left .section2LeftIcons {
+  display: flex;
+  margin-top: 20px;
+  font-size: 30px;
+  gap: 30px;
+  justify-content: start;
+}
+
+.section2 .section2Right {
+  margin-top: -150px;
+  display: flex;
+  justify-content: end;
+}
+
+/* maqolalar */
+.maqolalar .maqolalarWrapper {
+  width: 85%;
+  margin: 150px auto;
+  color: white;
+}
+.maqolalarWrapper .maqaolalarCards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.maqaolalarCards .maqaolalarCard {
+  width: 45%;
+  background: center/cover url("../images/blog.png");
+  height: 300px;
+  margin: 20px;
+  display: flex;
+  align-items: end;
+}
+.maqaolalarCard .maqalaText {
+  height: 150px;
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.3);
+}
 
 
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .nav {
     padding: 0px 30px;
     justify-content: left;
@@ -458,5 +531,24 @@ a.button:hover {
 
   .newsCards .newsCard {
     width: 70%;
+  }
+  .section2 .section2Wrapper {
+    width: 90%;
+    padding: 100px 0px 0px 50px ;
+  }
+  .section2 .section2Left {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+  }
+  .section2 .section2Left h3{
+    font-size: 25px;
+  }
+  .section2 .section2Right {
+    position: absolute;
+    z-index: 1;
+    bottom: 0px;
+    left: 50px;
+    filter: blur(5px);
   }
 }
