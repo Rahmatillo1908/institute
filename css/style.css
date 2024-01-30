@@ -530,7 +530,7 @@ a.button:hover {
   }
 
   .newsCards .newsCard {
-    width: 70%;
+    width: 90%;
   }
   .section2 .section2Wrapper {
     width: 90%;
@@ -550,5 +550,8 @@ a.button:hover {
     bottom: 0px;
     left: 50px;
     filter: blur(5px);
+  }
+  .maqaolalarCards .maqaolalarCard {
+    width:100%;
   }
 }
