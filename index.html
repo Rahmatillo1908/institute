@@ -13,12 +13,51 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
-
 <body>
-  <div class="container">
 
+  <div class="links-media">
+    <i class="close fa fa-close" ></i>
+    <ul id="menu">
+      <li>
+        <a href="index.html">BOSH SAHIFA</a>
+      </li>
+      <li>
+        <a href="./pages/nnt.html">NNT <i class="fa-solid fa-caret-down"></i></a>
+        <ul class="submenu">
+          <div class="inner">
+            <li> <a href="./pages/nnt.html">Kasaba uyushma</a> </li>
+            <li> <a href="./pages/nnt.html">NNT</a> </li>
+            <li> <a href="./pages/nnt.html">NNT</a> </li>
+            <li> <a href="./pages/nnt.html">NNT</a> </li>
+          </div>
+        </ul>
+      </li>
+      <li>
+        <a href="./pages/oav.html">OAV</a>
+      </li>
+      <li>
+        <a href="./pages/streets.html">MAHALLALAR <i class="fa-solid fa-caret-down"></i></a>
+        <ul class="submenu">
+          <div class="inner">
+            <li> <a href="./pages/streets.html">Qo'qon</a> </li>
+            <li> <a href="./pages/streets.html">Dang'ara</a> </li>
+            <li> <a href="./pages/streets.html">Uchko'prik</a> </li>
+          </div>
+        </ul>
+      </li>
+      <li>
+        <a href="./pages/blog.html">YANGILIKLAR</a>
+      </li>
+      <li>
+        <a href="./pages/announce.html">E'LONLAR</a>
+      </li>
+      <li>
+        <a href="./pages/docs.html">NORMATIV HUJJATLAR</a>
+      </li>
+    </ul>
+  </div>
     <!-- top section -->
     <div class="top">
       <div class="top-left">
@@ -39,8 +78,10 @@
         <i class="fa-brands fa-telegram"></i>
         <div class="divider"></div> <br />
         <div class="lang-menu">
+        
           <div class="selected-lang">
-            <p>O'zbek</p>
+            <p>O'zbek  </p>
+            <div class="selectedImg"></div>
           </div>
           <ul>
             <li>
@@ -190,6 +231,7 @@
       <div class="section2Wrapper">
         <div class="section2Left">
           <h3>Farg’ona viloyati fuqarolik ishlari institutlari</h3>
+          <div class="chiziq chiziq1"></div>
           <h4>Palonchiyev Pistonchi</h4>
           <p>Fuqarolik ishlari direktori</p>
           <div class="section2LeftIcons">
@@ -199,6 +241,7 @@
           </div>
         </div>
         <div class="section2Right">
+          <div class="chiziq chiziq2"></div>
           <img src="./images/humo.png" alt="">
         </div>
       </div>
@@ -252,12 +295,13 @@
           <h4>Savollaringiz bormi?</h4>
           <input type="text" placeholder="Ismingiz">
           <input type="text" placeholder="Telefon raqam">
-          <button>Yuborish <i class="fa  fa-message" ></i></button>
+          <button>Yuborish <i class="fa-regular fa-paper-plane"></i></button>
         </div>
       </div>
     </div>
     <!-- Swiper JS -->
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
 
     <!-- Initialize Swiper -->
     <script>
