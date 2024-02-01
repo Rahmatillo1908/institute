@@ -9,3 +9,7 @@ menu.addEventListener("click", () => {
 closeBtn.addEventListener("click", () => {
     linksMedia.style.marginLeft = "-500%"
 })
+
+
+let d = document.querySelector(".nav .links")
+console.log(d);

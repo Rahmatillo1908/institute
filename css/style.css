@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
-
+html {
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
@@ -131,6 +133,7 @@ i {
   background-repeat: no-repeat;
 }
 
+
 .ru:before {
   background-image: url('../images/svg/russia-flag.png');
 }
@@ -161,7 +164,7 @@ i {
   align-items: center;
   justify-content: center;
   color: #fff;
-  font-size: 18px;
+  font-size: 16px;
   background: rgba(30, 39, 97, 0.44);
   border-radius: 10px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -180,7 +183,11 @@ i {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
 }
-
+.links li a {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
 .nav .links a:hover {
   display: block;
 }

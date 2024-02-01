@@ -1,26 +1,76 @@
-.kirish{
-    width: 15%;
+
+/* all */
+
+.kirish {
+    width: 25%;
     height: 5vh;
-    position:absolute;
+    position: absolute;
     padding: 5px;
-    top:230px;
-    left:120px;
-    z-index:500;
+    top: 200px;
+    left: 120px;
+    z-index: 500;
     color: white;
     display: flex;
-background-color: #323c82;
     align-items: center;
 }
-
-.blocks {
-    position: absolute;
-    left: 100%;
-    top: 0px;
-    width:6vh;
-    height: 6vh;
-    background: conic-gradient(transparent 235deg, #323c82 235deg 315deg, transparent 315deg);
-}
-.kirishPage a{
+.kirishPage a {
     color: #fff;
     text-decoration: none;
+}
+
+
+/* for blog */
+.blogNews {
+    display: flex;
+    width: 95%;
+    margin: 100px auto;
+    justify-content: space-between;
+}
+.blogNews img {
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.blogNews a {
+    color: blue;
+    font-weight: 800;
+    font-size: 18px;
+    padding: 0px 5px;
+}
+.blogNews .blogNewsLeft {
+    width: 40%;
+}
+.blogNewsLeft img {
+    height: 400px;
+}
+.blogNews .blogNewsRight {
+    width: 55%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.blogNewsRight img {
+    height: 200px;
+}
+.blogNewsRightCard .blogNewsCardText {
+    padding: 0px 5px;
+    height: 110px;
+    overflow: hidden;
+    font-size: 15px;
+}
+
+@media screen and (max-width:800px) {
+    .blogNews {
+        display: block;
+    }
+    .blogNews .blogNewsLeft,
+    .blogNews .blogNewsRight {
+        width: 95%;
+        margin: 60px auto;
+    }
+    .kirish {
+        left: 35px;
+        width: 50%;
+        top: 125px;
+    }
 }
