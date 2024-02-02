@@ -11,5 +11,3 @@ closeBtn.addEventListener("click", () => {
 })
 
 
-let d = document.querySelector(".nav .links")
-console.log(d);

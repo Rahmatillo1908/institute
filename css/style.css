@@ -435,7 +435,6 @@ a.button:hover {
   left: 50%;
   top: 30px;
   z-index: 1;
-  ;
 }
 
 .section2 img {
@@ -596,6 +595,10 @@ a.button:hover {
     z-index: 500;
   }
 
+  .section2 {
+    background: #1E2761;
+  }
+
   .links-media #menu {
     display: flex;
     justify-content: start;
@@ -713,25 +716,43 @@ a.button:hover {
 
   .section2 .section2Wrapper {
     width: 90%;
-    padding: 100px 0px 0px 50px;
+    padding: 100px 0px 0px 0px;
   }
 
   .section2 .section2Left {
     position: relative;
     z-index: 2;
     width: 100%;
+    text-align: center;
   }
 
   .section2 .section2Left h3 {
     font-size: 25px;
   }
 
+  .section2 .section2Left .chiziq {
+    width: 85%;
+    left: calc(15% / 2);
+  }
+
+  .section2 .section2Left .section2LeftIcons {
+    justify-content: center;
+    width: max-content;
+    margin: 20px auto;
+  }
+
   .section2 .section2Right {
     position: absolute;
     z-index: 1;
     bottom: 0px;
-    left: 50px;
+    justify-content: center;
+    width: 100%;
+    left: 0px;
     filter: blur(5px);
+  }
+
+  .section2Right .chiziq2 {
+    display: none;
   }
 
   .maqaolalarCards .maqaolalarCard {
