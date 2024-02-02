@@ -1,4 +1,3 @@
-
 /* all */
 
 .kirish {
@@ -13,6 +12,7 @@
     display: flex;
     align-items: center;
 }
+
 .kirishPage a {
     color: #fff;
     text-decoration: none;
@@ -26,32 +26,39 @@
     margin: 100px auto;
     justify-content: space-between;
 }
+
 .blogNews img {
     width: 100%;
     border-radius: 5px;
     object-fit: cover;
 }
+
 .blogNews a {
     color: blue;
     font-weight: 800;
     font-size: 18px;
     padding: 0px 5px;
 }
+
 .blogNews .blogNewsLeft {
     width: 40%;
 }
+
 .blogNewsLeft img {
     height: 400px;
 }
+
 .blogNews .blogNewsRight {
     width: 55%;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
+
 .blogNewsRight img {
     height: 200px;
 }
+
 .blogNewsRightCard .blogNewsCardText {
     padding: 0px 5px;
     height: 110px;
@@ -59,18 +66,104 @@
     font-size: 15px;
 }
 
+/* for nnt  */
+.nntNews {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 95%;
+    margin: 100px auto;
+    flex-wrap: wrap;
+}
+
+.nntNewsCard {
+    width: 45%;
+    display: flex;
+    margin: 20px 0px;
+}
+
+.nntNewsCard img {
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nntNewsCard .nntNewsCardText {
+    padding: 0px 5px;
+    height: 140px;
+    overflow: hidden;
+    font-size: 15px;
+}
+
+.nntNewsCardText a {
+    position: absolute;
+    bottom: 30px;
+}
+
+
+/* for announce */
+.announceNews {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 95%;
+    margin: 100px auto;
+    flex-wrap: wrap;
+}
+
+.announceNews a {
+    color: black;
+}
+
+.announceNewsCard {
+    width: 30%;
+    height: 400px;
+    margin: 20px 0px;
+}
+
+.announceNewsCard img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.announceNewsCard .announceNewsText {
+    padding: 0px 10px;
+}
+
+.announceNewsCard .announceNewsText:hover {
+    color: blue;
+}
+
 @media screen and (max-width:800px) {
+    .kirish {
+        left: 50px;
+        width: 50%;
+        top: 125px;
+    }
+
     .blogNews {
         display: block;
     }
+
     .blogNews .blogNewsLeft,
     .blogNews .blogNewsRight {
         width: 95%;
         margin: 60px auto;
     }
-    .kirish {
-        left: 35px;
-        width: 50%;
-        top: 125px;
+
+    .nntNewsCard {
+        width: 90%;
+    }
+
+    .announceNewsCard {
+        width: 75%;
+        margin: 20px auto;
+        min-height: auto;
+        max-width: 400px;
+    }
+
+    .announceNewsCard img {
+        height: 200px;
     }
 }

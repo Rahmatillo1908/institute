@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
 html {
   scroll-behavior: smooth;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -85,7 +87,7 @@ i {
   line-height: 2;
   cursor: pointer;
   align-items: center;
-  gap:10px;
+  gap: 10px;
 
 }
 
@@ -183,11 +185,14 @@ i {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
 }
+
 .links li a {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 3px;
 }
+
 .nav .links a:hover {
   display: block;
 }
@@ -416,6 +421,7 @@ a.button:hover {
   font-size: 36px;
   margin-bottom: 20px;
 }
+
 .section2 .chiziq {
   position: absolute;
   background: #3DF285;
@@ -423,19 +429,24 @@ a.button:hover {
   height: 2px;
   left: 0px;
 }
+
 .section2 .chiziq2 {
   width: 50%;
   left: 50%;
   top: 30px;
-  z-index: 1;;
+  z-index: 1;
+  ;
 }
+
 .section2 img {
   position: relative;
   z-index: 2;
 }
+
 .section2 .section2Left h4 {
   margin-top: 40px;
 }
+
 .section2 .section2Left p {
   color: #3DF285;
 }
@@ -559,10 +570,11 @@ a.button:hover {
 
 @media screen and (max-width: 800px) {
   .submenu {
-    display:none;
+    display: none;
   }
+
   .links-media {
-    transition:0.4s;
+    transition: 0.4s;
     display: block;
     position: fixed;
     width: 100%;
@@ -583,19 +595,22 @@ a.button:hover {
     font-size: 40px;
     z-index: 500;
   }
- 
+
   .links-media #menu {
     display: flex;
     justify-content: start;
     gap: 30px;
     flex-direction: column;
   }
-ul li:hover ul {
-  display: none;
-}
-#menu i {
-  display: none;
-}
+
+  ul li:hover ul {
+    display: none;
+  }
+
+  #menu i {
+    display: none;
+  }
+
   #menu a {
     color: white;
   }
@@ -617,13 +632,16 @@ ul li:hover ul {
     right: 40px;
     left: -100px;
   }
+
   .selected-lang {
     width: 100px;
     display: block;
   }
+
   .selected-lang img {
     width: 100%;
   }
+
   .selected-lang p {
     /* width: 0px; */
     display: none;
