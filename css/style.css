@@ -541,7 +541,7 @@ a.button:hover {
   flex-direction: column;
   background: rgba(0, 0, 0, 0.2);
   align-items: center;
-  padding: 50px 0px;
+  padding: 50px 30px;
   border-radius: 10px;
 }
 
@@ -706,7 +706,8 @@ a.button:hover {
     margin-left: 40px;
   }
 
-  a.button {
+  .image-data a.button {
+    margin-top: -20px;
     margin-left: 40px;
   }
 
@@ -761,6 +762,7 @@ a.button:hover {
 
   .contact .contactWrapper {
     display: block;
+    padding: 10px;
   }
 
   .contactWrapper .contactLeft,

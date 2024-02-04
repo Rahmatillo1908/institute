@@ -1,7 +1,7 @@
 /* all */
 
 .kirish {
-    width: 25%;
+    width: 50%;
     height: 3.5vh;
     position: absolute;
     padding: 5px;
@@ -265,6 +265,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 30px;
 }
 
 .progressBar .progressBarChild {
@@ -275,7 +276,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
 }
 
 .progressNumber {
@@ -372,10 +372,26 @@
         align-items: center;
         position: relative;
         top: 0px;
+        gap: 10px;
+    }
+
+    .streetsProgress .progressBar {
+        width: 200px;
+        height: 200px;
+        font-size: 20px;
+    }
+
+    .pegressNumberColor {
+        width: 40px;
+        height: 40px;
     }
 
     .streetsContents {
-        width: 90%;
+        width: 100%;
         margin: 0px auto;
+    }
+
+    .streetsContent {
+        height: auto;
     }
 }
