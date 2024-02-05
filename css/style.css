@@ -771,6 +771,10 @@ a.button:hover {
     margin: 30px auto;
   }
 
+  .contactRight input {
+    width: 90%;
+  }
+
   .contactLeft .contactNumber {
     flex-wrap: wrap;
   }
