@@ -7,10 +7,10 @@
     padding: 5px;
     top: 200px;
     left: 120px;
-    z-index: 500;
     color: white;
     display: flex;
-    align-items: center;
+    align-items: end;
+    background: #23527c;
 }
 
 .kirishPage a {
@@ -18,6 +18,45 @@
     text-decoration: none;
 }
 
+.kirishNew {
+    position: relative;
+    padding: 50px;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    height: 200px;
+}
+
+.kirishNew .kirishPage {
+    padding-left: 20px;
+}
+
+.search {
+    display: flex;
+    width: 90%;
+    margin: 0px auto;
+    padding-top: 50px;
+}
+
+.search input {
+    outline: none;
+    border: 2px solid #23527c;
+    padding: 5px 10px;
+    font-size: 20px;
+    border-radius: 20px 0px 0px 20px;
+    border-color: #23527c transparent #23527c #23527c;
+    transform: translateX(10px);
+}
+
+.search button {
+    outline: none;
+    border: 2px solid #23527c;
+    padding: 5px 10px;
+    font-size: 20px;
+    border-radius: 0px 20px 20px 0px;
+    background: white;
+    border-color: #23527c #23527c #23527c transparent;
+}
 
 /* for blog */
 .blogNews {
@@ -68,39 +107,64 @@
 }
 
 /* for nnt  */
-.nntNews {
+.nnt {
+    padding: 50px;
+}
+
+.nnt .nntLeft {
     display: flex;
-    justify-content: center;
-    gap: 30px;
-    width: 95%;
-    margin: 100px auto;
+    align-items: center;
     flex-wrap: wrap;
+    box-shadow: 0px 0px 10px 3px #999;
+    padding: 30px 15px;
+    border-radius: 10px;
+    margin: 50px auto;
+    border: 3px solid #999;
 }
 
-.nntNewsCard {
-    width: 45%;
-    display: flex;
-    margin: 20px 0px;
+.nntLeft .nntName {
+    width: 30%;
+    text-align: center;
 }
 
-.nntNewsCard img {
-    width: 40%;
-    height: 100%;
+.nntName img {
+    width: 50%;
     object-fit: cover;
+    box-shadow: 0px 0px 10px 3px #999;
+    border-radius: 5px;
 }
 
-.nntNewsCard .nntNewsCardText {
-    padding: 0px 5px;
-    height: 140px;
-    overflow: hidden;
-    font-size: 15px;
+.nntLeft .nntAbout {
+    width: 65%;
 }
 
-.nntNewsCardText a {
-    position: absolute;
-    bottom: 30px;
+.nntAbout .nntAboutCard {
+    display: flex;
+    gap: 15px;
 }
 
+.nntAboutCard p:nth-child(odd),
+.nntAbout h3 {
+    text-align: center;
+    border-bottom: 1px solid #000;
+    font-weight: 600;
+    padding: 6px 2px;
+    margin: 6px 0px;
+}
+
+.nntAboutCard h5 {
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.nnt .nntYutuq {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
 /* for announce */
 .announceNews {
@@ -312,17 +376,18 @@
     .slide .image-data {
         top: 60%;
     }
-
-    .kirish {
-        top: 180px;
-    }
 }
 
 @media screen and (max-width:800px) {
     .kirish {
-        left: 50px;
-        width: 50%;
-        top: 125px;
+        align-items: center;
+    }
+
+
+    .kirish .kirishPage {
+        transform: translateY(-47px);
+        position: absolute;
+        z-index: 15;
     }
 
     .blogNews {
@@ -348,6 +413,11 @@
 
     .announceNewsCard img {
         height: 200px;
+    }
+
+    .nnt .nntLeft>div {
+        width: 100%;
+        padding: 30px 0px;
     }
 
     .hududCards {

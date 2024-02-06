@@ -30,6 +30,8 @@ i {
   height: 13vh;
   display: flex;
   justify-content: space-around;
+  position: relative;
+  z-index: 10;
 }
 
 .top .top-left {
@@ -157,7 +159,7 @@ i {
 
 .nav {
   position: absolute;
-  z-index: 5;
+  z-index: 10;
   left: 5%;
   top: 100px;
   width: 90%;
