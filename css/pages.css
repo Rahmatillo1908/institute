@@ -1,8 +1,6 @@
 /* all */
 
-.nav {
-    top: 120px;
-}
+
 
 .kirish {
     width: 50%;
@@ -36,7 +34,7 @@
 .search {
     display: flex;
     margin: 0px auto;
-    padding-top: 50px;
+    padding: 50px;
 }
 
 .search input {
@@ -343,49 +341,11 @@
     padding: 10px;
 }
 
-.streetsProgress {
-    display: flex;
-    align-items: start;
-    position: sticky;
-    top: 40px;
-    height: max-content;
-    gap: 50px;
-}
+/* .streetsList {} */
 
-.streetsProgress .progressBar {
-    width: 300px;
-    height: 300px;
-    background: conic-gradient(red 10%, purple 10% 30%, green 30% 65%, orange 65%);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 30px;
-}
-
-.progressBar .progressBarChild {
-    background: white;
-    width: 70%;
-    border-radius: 50%;
-    height: 70%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.progressNumber {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.pegressNumberColor {
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
+.streetsList h1 {
+    border: 1px solid black;
+    padding: 10px 0px;
 }
 
 .streetsContents {
@@ -404,6 +364,7 @@
 }
 
 @media screen and (max-width:1110px) {
+
     .slide .image-data {
         top: 60%;
     }
@@ -414,15 +375,26 @@
 }
 
 @media screen and (max-width:800px) {
+    .nav {
+        top: 150px;
+    }
+
     .kirish {
         align-items: end;
-        height: 130px;
+    }
+
+    .kirishNew {
+        top: -40px;
     }
 
     .search {
-        padding: 0px;
+        padding: 50px;
         padding-top: 70px;
         margin: 0px auto;
+    }
+
+    .search input {
+        width: 220px;
     }
 
     .nntSearch {
