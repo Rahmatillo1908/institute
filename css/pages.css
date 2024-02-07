@@ -492,6 +492,11 @@
         margin: 0px auto;
     }
 
+    .streetsList h1 {
+        font-size: 15px;
+        border-radius: 5px;
+    }
+
     .streetsContents {
         width: 90%;
         margin: 100px auto;
