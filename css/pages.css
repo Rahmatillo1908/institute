@@ -23,7 +23,6 @@
     padding: 50px;
     width: 100%;
     left: 0px;
-    top: 30px;
     height: 200px;
 }
 
@@ -332,20 +331,32 @@
 .streets {
     width: 90%;
     margin: 50px auto;
-    position: relative;
 }
 
 .streetsWrapper {
+    position: relative;
     display: flex;
     justify-content: space-between;
     padding: 10px;
 }
 
-/* .streetsList {} */
+.streetsList {
+    width: 45%;
+    position: sticky;
+    height: max-content;
+    top: 40px;
+}
 
 .streetsList h1 {
-    border: 1px solid black;
-    padding: 10px 0px;
+    border: 1px solid #23527c;
+    padding: 5px 20px;
+    border-radius: 15px 0px 0px 15px;
+    margin: 20px 0px;
+    box-shadow: 0px 0px 5px 1px #23527c;
+}
+
+.streetsList a {
+    color: black;
 }
 
 .streetsContents {
@@ -375,17 +386,11 @@
 }
 
 @media screen and (max-width:800px) {
-    .nav {
-        top: 150px;
-    }
 
     .kirish {
         align-items: end;
     }
 
-    .kirishNew {
-        top: -40px;
-    }
 
     .search {
         padding: 50px;
@@ -481,31 +486,19 @@
         display: block;
     }
 
-    .streetsProgress {
-        justify-content: center;
-        align-items: center;
+    .streetsList {
+        width: 90%;
         position: relative;
-        top: 0px;
-        gap: 10px;
-    }
-
-    .streetsProgress .progressBar {
-        width: 200px;
-        height: 200px;
-        font-size: 20px;
-    }
-
-    .pegressNumberColor {
-        width: 40px;
-        height: 40px;
-    }
-
-    .streetsContents {
-        width: 100%;
         margin: 0px auto;
     }
 
+    .streetsContents {
+        width: 90%;
+        margin: 100px auto;
+    }
+
     .streetsContent {
+        padding: 10px 0px;
         height: auto;
     }
 }
