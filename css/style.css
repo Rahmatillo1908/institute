@@ -170,20 +170,24 @@ i {
 .nav {
   position: absolute;
   z-index: 10;
-  left: 5%;
+  left: 2.5%;
   top: 100px;
-  width: 90%;
+  width: 95%;
   height: 70px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   color: #fff;
-  font-size: 16px;
+  font-size: 15px;
   background: rgba(30, 39, 97, 0.44);
   border-radius: 10px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(12.2px);
   -webkit-backdrop-filter: blur(12.2px);
+}
+
+.nav i:nth-child(1) {
+  display: none;
 }
 
 .nav .links {
@@ -198,60 +202,15 @@ i {
   font-weight: 400;
 }
 
-.links li a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 3px;
-}
-
-.nav .links a:hover {
-  display: block;
-}
-
 #menu {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-#menu li {
-  margin-left: 30px;
+  gap: 20px;
 }
 
 ul li {
   list-style: none;
-}
-
-ul li:hover ul {
-  display: block;
-}
-
-.submenu {
-  display: none;
-  position: absolute;
-  top: 55px;
-}
-
-.inner {
-  margin: -5px auto;
-  background: rgba(255, 255, 255, 0.22);
-  border-radius: 6px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4.7px);
-  -webkit-backdrop-filter: blur(4.7px);
-  display: flex;
-  padding: 10px;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.inner li {
-  text-align: center;
-  width: 100%;
-  margin-right: 30px;
-  border-bottom: 2px solid #152948;
 }
 
 .wrapper,
@@ -580,8 +539,8 @@ a.button:hover {
 }
 
 @media screen and (max-width: 800px) {
-  .submenu {
-    display: none;
+  .nav i:nth-child(1) {
+    display: block;
   }
 
   .navbars {
@@ -596,7 +555,7 @@ a.button:hover {
     top: 0px;
     left: 0px;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.8);
     padding-top: 50px;
     color: white;
     z-index: 10000;
