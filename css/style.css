@@ -31,7 +31,7 @@ i {
   display: flex;
   justify-content: space-around;
   position: relative;
-  z-index: 10;
+  z-index: 100;
 }
 
 .top .top-left {
@@ -49,6 +49,10 @@ i {
   align-items: center;
   color: #1E2761;
   font-size: 20px;
+}
+
+.navbars {
+  display: none;
 }
 
 .divider {
@@ -90,7 +94,6 @@ i {
   cursor: pointer;
   align-items: center;
   gap: 10px;
-
 }
 
 .lang-menu ul {
@@ -113,6 +116,7 @@ i {
   text-align: left;
   display: flex;
   justify-content: space-between;
+
 }
 
 .lang-menu ul li a {
@@ -121,6 +125,7 @@ i {
   display: block;
   font-size: 12px;
 }
+
 
 .lang-menu ul li:hover {
   background-color: #f2f2f2;
@@ -135,6 +140,7 @@ i {
   margin-right: 10px;
   background-size: contain;
   background-repeat: no-repeat;
+  border-radius: 50%;
 }
 
 
@@ -146,9 +152,13 @@ i {
   background-image: url('../images/svg/uzbekistan.png');
 }
 
+.en::before {
+  background: url("../images/svg/kingdom-flag.png");
+}
 
 
 .lang-menu:hover ul {
+  position: absolute;
   display: block;
 }
 
@@ -572,6 +582,10 @@ a.button:hover {
 @media screen and (max-width: 800px) {
   .submenu {
     display: none;
+  }
+
+  .navbars {
+    display: block;
   }
 
   .links-media {

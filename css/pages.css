@@ -2,12 +2,27 @@
 
 
 
+.nav a {
+    color: #23527c !important;
+    font-weight: 600 !important;
+}
 
+.top {
+    z-index: 100;
+    background: #23527c;
+}
+
+.top .top-left,
+.top .top-right {
+    color: white !important;
+}
 
 .search {
     display: flex;
     margin: 0px auto;
+    margin-top: 150px;
     justify-content: center;
+    width: max-content;
     padding: 50px;
 }
 
@@ -34,7 +49,7 @@
 .blogNews {
     display: flex;
     width: 95%;
-    margin: 100px auto;
+    margin: 150px auto;
     justify-content: space-between;
 }
 
@@ -85,16 +100,18 @@
     justify-content: space-between;
     width: 90%;
     margin: 0px auto;
-    margin-top: 100px;
+    margin-top: 160px;
 }
 
-.search {
+.nntSearch .search {
     padding: 0px;
+    margin: 0px;
     justify-content: start;
 }
 
 .nntList {
     width: 40%;
+    height: auto;
     border-radius: 10px;
     padding: 10px 15px;
     outline: none;
@@ -174,7 +191,7 @@
     justify-content: center;
     gap: 30px;
     width: 95%;
-    margin: 100px auto;
+    margin: 140px auto;
     flex-wrap: wrap;
 }
 
@@ -208,6 +225,7 @@
 .hudud {
     text-align: center;
     padding: 50px;
+    margin: 100px auto;
 }
 
 
@@ -360,6 +378,10 @@
 }
 
 @media screen and (max-width:800px) {
+    .nav a {
+        color: white !important;
+    }
+
     .navbars {
         display: flex;
         width: 100%;
@@ -377,25 +399,15 @@
     }
 
     .top {
-        height: 230px;
         padding: 30px 0px;
         align-items: start;
-        background: linear-gradient(white 40%, #23527c 40%);
     }
-
-    /* .kirish {
-        align-items: end;
-    }
-
-    .kirishNew .kirishPage {
-        padding: 0px 0px 30px 40px;
-    } */
 
     .search {
         padding: 0px;
         padding-top: 70px;
         justify-content: center;
-        margin: 0px auto;
+        margin: 80px auto;
     }
 
     .search input {
@@ -406,6 +418,7 @@
         display: flex;
         flex-direction: column;
         padding: 0px;
+
     }
 
     .nntSearch .nntList {
@@ -419,6 +432,7 @@
 
     .blogNews {
         display: block;
+        margin: 150px auto;
     }
 
     .blogNews .blogNewsLeft,
@@ -429,6 +443,10 @@
 
     .nntNewsCard {
         width: 100%;
+    }
+
+    .announceNews {
+        margin: 150px auto 50px;
     }
 
     .announceNewsCard {
@@ -457,6 +475,10 @@
 
     .nntAbout .nntAboutCard {
         display: block;
+    }
+
+    .hudud {
+        margin: 70px auto;
     }
 
     .hududCards {
