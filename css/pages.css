@@ -10,6 +10,7 @@
 .top {
     z-index: 100;
     background: #23527c;
+    height: 80px;
 }
 
 .top .top-left,
@@ -360,6 +361,14 @@
 .streets {
     width: 90%;
     margin: 50px auto;
+}
+
+.newSearch {
+    width: 90%;
+    margin: 0px auto;
+    margin-top: 140px;
+    display: flex;
+    justify-content: end;
 }
 
 .streetsWrapper {
