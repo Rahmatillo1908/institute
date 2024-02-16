@@ -94,6 +94,67 @@
     font-size: 15px;
 }
 
+
+/* blogChild  */
+.blogChild {
+    width: 95%;
+    margin: 130px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blogChild h1 {
+    text-align: center;
+}
+
+.blogChildLeft {
+    width: 65%;
+}
+
+.blogChildLeftCard {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.blogChildLeft img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.blogChildLeft p {
+    line-height: 30px;
+    width: 90%;
+}
+
+.blogChildRight {
+    width: 30%;
+}
+
+.blogChildRight h2 {
+    padding-top: 40px;
+    text-align: center;
+}
+
+.blogChildRightCard {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 35px 0px;
+    display: block;
+    color: black;
+    transition: 0.2s;
+}
+
+.blogChildRightCard:hover {
+    border: 1px solid #23527c;
+    color: #23527c;
+}
+
+.blogChildRightCard .time {
+    padding: 10px 0px;
+}
+
 /* for nnt  */
 .nntSearch {
     width: 90%;
@@ -137,16 +198,15 @@
     background: #23527c;
 }
 
-.nntLists h2:hover a {
+.nntLists a:hover {
     color: white;
 }
 
-.nntRight h2:nth-child(1) {
+.nntLists a:nth-child(1) h2 {
     border-radius: 10px 10px 0px 0px;
-
 }
 
-.nntRight h2:nth-last-child(1) {
+.nntLists a:nth-last-child(1) h2 {
     border-radius: 0px 0px 10px 10px;
     border-bottom: 1px solid grey;
 }
@@ -330,6 +390,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.container .search {
+    margin-top: 120px;
+    margin-left: 40px;
 }
 
 .docs .docsRight {
@@ -566,5 +631,18 @@
     .streetsContent {
         padding: 10px 0px;
         height: auto;
+    }
+
+    .blogChild {
+        display: block;
+    }
+
+    .blogChildLeft {
+        width: 100%;
+    }
+
+    .blogChildRight {
+        width: 100%;
+        padding-top: 50px;
     }
 }

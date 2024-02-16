@@ -4,11 +4,33 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  animation: body 0.4s ease-in-out;
+}
+
+@keyframes body {
+  0% {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+
+  50% {
+    transform: translateY(0%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  outline: none;
 }
 
 a {
@@ -346,6 +368,8 @@ a.button:hover {
 .newsCard {
   margin: 35px;
   width: 300px;
+  border-radius: 5px;
+  overflow: hidden;
   box-shadow: 0px 0px 20px 3px rgba(128, 128, 128, 0.5);
 }
 
@@ -369,7 +393,7 @@ a.button:hover {
 
 .section2 {
   border-radius: 20px;
-  background: linear-gradient(to right, #1E2761 82%, #3DF285 82%);
+  background: #1E2761;
   width: 85%;
   margin: 50px auto;
   position: relative;
