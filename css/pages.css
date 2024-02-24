@@ -391,10 +391,13 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
+.container {
+    display: flex;
+    justify-content: end;
+}
 .container .search {
     margin-top: 120px;
-    margin-left: 40px;
+    margin-right: 100px;
 }
 
 .docs .docsRight {
@@ -476,7 +479,82 @@
     justify-content: center;
     flex-direction: column;
 }
-
+.grant {
+    display: flex;
+    padding: 30px;
+}
+.grant .grantLeft {
+    width: 75%;
+}
+.grantLeft .grandCard {
+    width: 100%;
+    margin: 10px auto;
+    border-bottom: 1px solid gray;
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    align-items: flex-start;
+}
+.grandCard img {
+    width: 45%;
+    object-fit: contain;
+}
+.grandCard .grandLeftText {
+    width: 55%;
+}
+.grandCard .grandLeftText a {
+    font-size: 18px;
+    color: rgb(44, 130, 216);
+    line-height: 22px;
+    display: block;
+    margin-bottom: 9px;
+}
+.grandLeftText a:hover {
+    color: #23527c;
+}
+.grandLeftText h5 {
+    color: gray;
+    cursor: pointer;
+    width: max-content;
+}
+.grandLeftText h5 i {
+    margin: 10px 5px;
+}
+.grandLeftText p{
+    font-size: 13px;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    line-height: 18px;
+}
+.grantRight {
+    width: 25%;
+    /* padding:10px 5px; */
+    display: flex;
+    flex-wrap: wrap;
+    border-left: 1px solid gray;
+    margin-top: 30px;
+}
+.grantRight h3 {
+    width: 100%;
+    text-align: center;
+}
+.grantRightCard {
+    border-bottom: 1px solid gray;
+    padding: 10px 20px;
+}
+.grantRightCard a {
+    color: dodgerblue;
+    font-size: 14px;
+}
+.grantRightCard a:hover {
+    color: #23527c;
+}
+.grantRightCard h5 {    
+    color: gray;
+    cursor: pointer;
+    padding-top: 10px;
+    width: max-content;
+}
 @media screen and (max-width:1110px) {
 
     .slide .image-data {
@@ -526,9 +604,14 @@
     }
 
 
-
-
-
+    .container {
+        justify-content: center;
+    }
+    .container .search {
+        margin: 0px;
+        transform: translateY(120px);
+        margin-top: 10px;
+    }
 
     .blogNews {
         display: block;

@@ -498,7 +498,7 @@ a.button:hover {
 
 .contact .contactWrapper {
   display: flex;
-  padding: 30px 15px 30px 50px;
+  padding: 30px 15px 30px 20px;
   justify-content: space-between;
 }
 
@@ -523,7 +523,7 @@ a.button:hover {
 }
 
 .contactLeft .contactIcons {
-  padding-top: 50px;
+  padding-top: 30px;
   display: flex;
   gap: 20px;
   font-size: 25px;
@@ -532,11 +532,11 @@ a.button:hover {
 
 .contact .contactRight {
   display: flex;
-  width: 40%;
+  width: 35%;
   flex-direction: column;
   background: rgba(0, 0, 0, 0.2);
   align-items: center;
-  padding: 50px 30px;
+  padding: 30px 10px;
   border-radius: 10px;
 }
 
@@ -549,7 +549,7 @@ a.button:hover {
   padding: 15px 10px;
   width: 70%;
   font-size: 14px;
-  margin: 30px 0px;
+  margin: 20px 0px;
   box-shadow: 0px 0px 20px 3px rgba(128, 128, 128, 0.5);
 }
 
@@ -561,7 +561,10 @@ a.button:hover {
   outline: none;
   border: none;
 }
-
+.contactRight input::-webkit-inner-spin-button,
+.contactRight input::-webkit-outer-spin-button {
+    display: none;
+} 
 @media screen and (max-width: 800px) {
   .nav i:nth-child(1) {
     display: block;
@@ -767,12 +770,12 @@ a.button:hover {
 
   .contactWrapper .contactLeft,
   .contactWrapper .contactRight {
-    width: 90%;
+    width: 80%;
     margin: 30px auto;
   }
 
   .contactRight input {
-    width: 90%;
+    width: 80%;
   }
 
   .contactLeft .contactNumber {
