@@ -491,13 +491,16 @@
     margin: 10px auto;
     border-bottom: 1px solid gray;
     display: flex;
-    gap: 10px;
+    gap: 30px;
     padding: 20px;
+    height: 300px;
+    overflow: hidden;
     align-items: flex-start;
 }
 .grandCard img {
+    height: 100%;
     width: 45%;
-    object-fit: contain;
+    object-fit: cover;
     border-radius: 5px;
     box-shadow: 0px 0px 30px 5px rgba(173, 173, 173, 1) ;
 }
@@ -751,6 +754,8 @@
     .grantLeft .grandCard {
         display: block;
         width: 100%;
+        overflow: visible;
+        height: auto;
         align-items: center;
     }
     .grandCard img {
