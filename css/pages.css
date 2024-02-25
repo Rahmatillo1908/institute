@@ -392,13 +392,14 @@
     justify-content: space-between;
 }
 .container {
+    width: 85%;
+    margin: 0px auto;
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
+    margin-top: 150px;
+    font-size: 27px;
 }
-.container .search {
-    margin-top: 120px;
-    margin-right: 100px;
-}
+
 
 .docs .docsRight {
     margin: 20px auto;
@@ -447,26 +448,25 @@
 }
 
 .streetsList {
-    width: 45%;
+    width: 30%;
     position: sticky;
     height: max-content;
     top: 40px;
 }
 
-.streetsList h1 {
+.streetsList li {
     border: 1px solid #23527c;
-    padding: 5px 20px;
+    padding: 5px 30px;
+    list-style-type: decimal;
+    cursor: pointer;
     border-radius: 15px 0px 0px 15px;
     margin: 20px 0px;
+    font-size: 25px;
     box-shadow: 0px 0px 5px 1px #23527c;
 }
 
-.streetsList a {
-    color: black;
-}
-
 .streetsContents {
-    width: 50%;
+    width: 65%;
 }
 
 .streetsContent {
@@ -498,6 +498,8 @@
 .grandCard img {
     width: 45%;
     object-fit: contain;
+    border-radius: 5px;
+    box-shadow: 0px 0px 30px 5px rgba(173, 173, 173, 1) ;
 }
 .grandCard .grandLeftText {
     width: 55%;
@@ -518,7 +520,7 @@
     width: max-content;
 }
 .grandLeftText h5 i {
-    margin: 10px 5px;
+    margin: 10px;
 }
 .grandLeftText p{
     font-size: 13px;
@@ -526,21 +528,20 @@
     letter-spacing: 1px;
     line-height: 18px;
 }
+
 .grantRight {
     width: 25%;
-    /* padding:10px 5px; */
-    display: flex;
-    flex-wrap: wrap;
     border-left: 1px solid gray;
     margin-top: 30px;
 }
 .grantRight h3 {
-    width: 100%;
+    padding: 20px 0px;
+    font-size: 25px;
     text-align: center;
 }
 .grantRightCard {
     border-bottom: 1px solid gray;
-    padding: 10px 20px;
+    padding: 40px 20px;
 }
 .grantRightCard a {
     color: dodgerblue;
@@ -555,6 +556,14 @@
     padding-top: 10px;
     width: max-content;
 }
+.grantRight h5 i {
+    margin: 10px 5px;
+}
+.grandLeftText h5:hover ,
+.grantRight h5:hover{
+    color: #23527c;
+}
+
 @media screen and (max-width:1110px) {
 
     .slide .image-data {
@@ -605,12 +614,11 @@
 
 
     .container {
-        justify-content: center;
+        display: block;
+        text-align: center;
     }
-    .container .search {
-        margin: 0px;
-        transform: translateY(120px);
-        margin-top: 10px;
+    .container h3 {
+        transform: translateY(20px);
     }
 
     .blogNews {
@@ -701,7 +709,7 @@
         margin: 0px auto;
     }
 
-    .streetsList h1 {
+    .streetsList li {
         font-size: 15px;
         border-radius: 5px;
     }
@@ -727,5 +735,29 @@
     .blogChildRight {
         width: 100%;
         padding-top: 50px;
+    }
+    .grant {
+        display: block;
+    }
+    .grant .grantLeft {
+        width: 95%;
+        margin: 20px auto;
+    }
+    .grantRight {
+        width: 90%;
+        margin: 20px auto;
+        border-left:none;
+    }
+    .grantLeft .grandCard {
+        display: block;
+        width: 100%;
+        align-items: center;
+    }
+    .grandCard img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .grantLeft .grandLeftText {
+        width: 100%;
     }
 }
