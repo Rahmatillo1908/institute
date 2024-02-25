@@ -470,14 +470,39 @@
 }
 
 .streetsContent {
-    height: 180px;
-    margin: 30px 0px;
-    padding: 0px 30px;
-    border: 2px solid;
-    border-color: transparent black black transparent;
+    margin: 25px 0px;
+    padding: 10px 30px;
+    box-shadow: 0px 0px 15px 2px #23527c;
     display: flex;
+    border-radius: 10px;
     justify-content: center;
     flex-direction: column;
+    transition: 0.3s;
+}
+.streetsContent h2 {
+    padding: 20px 10px 0px 0px ;
+    width: max-content;
+    border-bottom: 1px solid #23527c;
+}
+.streetsContent b {
+    color: #00429c;
+}
+.streetsContent .streetIcons {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    font-size: 23px;
+    padding: 20px 0px 5px;
+    color: gray;
+}
+.streetsContent .streetIcons i{
+    transition: 0.3s;
+}
+.streetsContent:hover {
+    transform: scale(0.95);
+}
+.streetsContent .streetIcons i:hover {
+    color: #00429c;
 }
 .grant {
     display: flex;
@@ -713,7 +738,6 @@
     }
 
     .streetsList li {
-        font-size: 15px;
         border-radius: 5px;
     }
 
@@ -723,7 +747,7 @@
     }
 
     .streetsContent {
-        padding: 10px 0px;
+        /* padding: 10px; */
         height: auto;
     }
 
