@@ -10,4 +10,10 @@ closeBtn.addEventListener("click", () => {
     linksMedia.style.marginLeft = "-500%"
 })
 
+const hudud = document.querySelectorAll(".hududSection p")
+console.log(hudud);
+hudud.forEach((element,index) => {
+    element.addEventListener("click", ()=>{
 
+    })
+})

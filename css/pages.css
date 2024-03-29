@@ -322,47 +322,74 @@
 
 .hudud {
     text-align: center;
-    padding: 50px;
-    margin: 100px auto;
+    padding: 0px 50px;
+    margin: 50px auto;
 }
 
-
-.hudud .hududTop {
+.hududNews {
     display: flex;
-    justify-content: center;
+    align-items: start;
+    justify-content: space-between;
     padding: 30px 0px;
 }
 
-.hududTop button {
-    font-size: 20px;
+.hudud .hududSection {
+    width: 25%;
+}
+
+.hududSection .hududBolimlar {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-weight: 700;
+}
+
+.hududBolimlar p {
+    font-size: 23px;
+    cursor: pointer;
+    width: max-content;
+}
+
+.hududBolimlar p::after {
+    content: "\f061";
+    margin-left: 10px;
+    color: #23527c;
+    font-family: FontAwesome;
+}
+
+.hududBolimlar p:active {
+    color: #23527c;
+}
+
+.hududSection button {
+    font-size: 30px;
     transition: 0.2s;
-    padding: 10px 30px;
+    margin: 10px 0px;
+    padding: 10px 20px;
     background: none;
-    border: none;
     outline: none;
-    border: 2px solid transparent;
+    border: none;
     border-radius: 5px;
+    border: 1px solid transparent;
+    border-bottom: 1px solid black;
     cursor: pointer;
     color: blue;
 }
 
-.hududTop button:focus {
-    border: 2px solid black;
-    color: black;
+.hududSection button:active {
+    border: 1px solid black;
 }
 
-.hududCards {
+.hudud .hududCards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: start;
     gap: 50px;
-    width: 90%;
-    margin: 0px auto;
+    width: 70%;
 }
 
 
 .hududCards .hududCard {
-    width: 300px;
+    width: 250px;
     text-align: left;
 }
 
@@ -373,13 +400,20 @@
 }
 
 .hududCards .hududCardText {
-    overflow: hidden;
     width: 100%;
+    overflow: hidden;
     height: 100px;
 }
 
 .hududCards .hududCardText p {
-    font-size: 14px;
+    display: -webkit-box;
+    font-size: 17px;
+    height: 100px;
+    line-height: 25px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 
@@ -391,10 +425,12 @@
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 .container {
     width: 85%;
     margin: 0px auto;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     margin-top: 150px;
     font-size: 27px;
@@ -479,14 +515,17 @@
     flex-direction: column;
     transition: 0.3s;
 }
+
 .streetsContent h2 {
-    padding: 20px 10px 0px 0px ;
+    padding: 20px 10px 0px 0px;
     width: max-content;
     border-bottom: 1px solid #23527c;
 }
+
 .streetsContent b {
     color: #00429c;
 }
+
 .streetsContent .streetIcons {
     display: flex;
     justify-content: end;
@@ -495,22 +534,28 @@
     padding: 20px 0px 5px;
     color: gray;
 }
-.streetsContent .streetIcons i{
+
+.streetsContent .streetIcons i {
     transition: 0.3s;
 }
+
 .streetsContent:hover {
     transform: scale(0.95);
 }
+
 .streetsContent .streetIcons i:hover {
     color: #00429c;
 }
+
 .grant {
     display: flex;
     padding: 30px;
 }
+
 .grant .grantLeft {
     width: 75%;
 }
+
 .grantLeft .grandCard {
     width: 100%;
     margin: 10px auto;
@@ -522,16 +567,19 @@
     overflow: hidden;
     align-items: flex-start;
 }
+
 .grandCard img {
     height: 100%;
     width: 45%;
     object-fit: cover;
     border-radius: 5px;
-    box-shadow: 0px 0px 30px 5px rgba(173, 173, 173, 1) ;
+    box-shadow: 0px 0px 30px 5px rgba(173, 173, 173, 1);
 }
+
 .grandCard .grandLeftText {
     width: 55%;
 }
+
 .grandCard .grandLeftText a {
     font-size: 18px;
     color: rgb(44, 130, 216);
@@ -539,18 +587,22 @@
     display: block;
     margin-bottom: 9px;
 }
+
 .grandLeftText a:hover {
     color: #23527c;
 }
+
 .grandLeftText h5 {
     color: gray;
     cursor: pointer;
     width: max-content;
 }
+
 .grandLeftText h5 i {
     margin: 10px;
 }
-.grandLeftText p{
+
+.grandLeftText p {
     font-size: 13px;
     word-spacing: 1px;
     letter-spacing: 1px;
@@ -562,33 +614,40 @@
     border-left: 1px solid gray;
     margin-top: 30px;
 }
+
 .grantRight h3 {
     padding: 20px 0px;
     font-size: 25px;
     text-align: center;
 }
+
 .grantRightCard {
     border-bottom: 1px solid gray;
     padding: 40px 20px;
 }
+
 .grantRightCard a {
     color: dodgerblue;
     font-size: 14px;
 }
+
 .grantRightCard a:hover {
     color: #23527c;
 }
-.grantRightCard h5 {    
+
+.grantRightCard h5 {
     color: gray;
     cursor: pointer;
     padding-top: 10px;
     width: max-content;
 }
+
 .grantRight h5 i {
     margin: 10px 5px;
 }
-.grandLeftText h5:hover ,
-.grantRight h5:hover{
+
+.grandLeftText h5:hover,
+.grantRight h5:hover {
     color: #23527c;
 }
 
@@ -645,6 +704,7 @@
         display: block;
         text-align: center;
     }
+
     .container h3 {
         transform: translateY(20px);
     }
@@ -704,13 +764,24 @@
     .hudud {
         margin: 70px auto;
     }
+    .hududNews {
+        display: block;
+    }
+    .hududNews > div {
+        width: 100% !important;
+        padding: 10px 0px;
+    }
 
-    .hududCards {
+    .hududNews .hududCards {
         justify-content: center;
     }
 
     .hududCards .hududCard {
         width: 100%;
+    }
+
+    .hudud .hududSection p {
+        font-size: 17px;
     }
 
     .hududTop button {
@@ -763,18 +834,22 @@
         width: 100%;
         padding-top: 50px;
     }
+
     .grant {
         display: block;
     }
+
     .grant .grantLeft {
         width: 95%;
         margin: 20px auto;
     }
+
     .grantRight {
         width: 90%;
         margin: 20px auto;
-        border-left:none;
+        border-left: none;
     }
+
     .grantLeft .grandCard {
         display: block;
         width: 100%;
@@ -782,10 +857,12 @@
         height: auto;
         align-items: center;
     }
+
     .grandCard img {
         width: 100%;
         margin-bottom: 10px;
     }
+
     .grantLeft .grandLeftText {
         width: 100%;
     }
